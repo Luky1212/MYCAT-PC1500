@@ -15,45 +15,45 @@
         header {
             background-color: #0044cc;
             color: white;
-            padding: 10px;
+            padding: 5px; /* Zmenšení paddingu */
             text-align: left;
         }
 
         header a {
             color: white;
             text-decoration: none;
-            font-size: 1.5em;
+            font-size: 1em; /* Zmenšení velikosti textu */
             font-weight: bold;
         }
 
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%; /* Zmenšení šířky obsahu */
+            margin: 10px auto; /* Zmenšení margínu */
             text-align: center;
         }
 
         /* Optimalizace hlavního obrázku */
         #main-image {
             width: 100%;
-            max-width: 800px; /* Maximální šířka hlavního obrázku */
+            max-width: 500px; /* Zmenšení max šířky hlavního obrázku */
             height: auto;
-            margin-bottom: 20px;
-            object-fit: contain; /* Zajistí, že obrázek se nevytáhne nebo neořeže */
+            margin-bottom: 10px; /* Zmenšení mezery pod obrázkem */
+            object-fit: contain;
         }
 
-        /* Miniatury jsou menší a přizpůsobí se stránce */
+        /* Miniatury jsou ještě menší a přizpůsobí se stránce */
         .thumbnail-container {
             display: flex;
             justify-content: center;
-            gap: 10px; /* Mezera mezi miniaturami */
-            margin-bottom: 20px;
+            gap: 5px; /* Zmenšení mezery mezi miniaturami */
+            margin-bottom: 10px; /* Zmenšení mezery pod miniaturami */
         }
 
         .thumbnail-container img {
-            width: 100px; /* Pevná šířka pro miniatury */
+            width: 60px; /* Zmenšení šířky miniatur */
             height: auto;
             cursor: pointer;
-            border: 2px solid #ddd;
+            border: 1px solid #ddd; /* Zmenšení tloušťky okraje */
             transition: border 0.3s;
         }
 
@@ -62,19 +62,19 @@
         }
 
         #description {
-            font-size: 1.2em;
+            font-size: 0.9em; /* Zmenšení velikosti textu popisu */
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Zmenšení mezery pod popisem */
         }
 
         /* Styl tlačítka */
         .contact-button {
             background-color: #0044cc;
             color: white;
-            padding: 10px 20px;
+            padding: 5px 10px; /* Zmenšení paddingu tlačítka */
             border: none;
             border-radius: 5px;
-            font-size: 1.1em;
+            font-size: 0.9em; /* Zmenšení velikosti textu tlačítka */
             cursor: pointer;
             text-decoration: none;
         }
@@ -90,7 +90,7 @@
             }
 
             .thumbnail-container img {
-                width: 80px; /* Zmenší miniatury na menších zařízeních */
+                width: 50px; /* Zmenšení miniatur na menších zařízeních */
             }
         }
 
