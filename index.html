@@ -35,20 +35,22 @@
         /* Optimalizace hlavního obrázku */
         #main-image {
             width: 100%;
-            max-width: 100%;
+            max-width: 800px; /* Maximální šířka hlavního obrázku */
             height: auto;
             margin-bottom: 20px;
+            object-fit: contain; /* Zajistí, že obrázek se nevytáhne nebo neořeže */
         }
 
         /* Miniatury jsou menší a přizpůsobí se stránce */
         .thumbnail-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 10px; /* Mezera mezi miniaturami */
             margin-bottom: 20px;
         }
 
         .thumbnail-container img {
-            width: 18%;
+            width: 100px; /* Pevná šířka pro miniatury */
             height: auto;
             cursor: pointer;
             border: 2px solid #ddd;
@@ -79,6 +81,17 @@
 
         .contact-button:hover {
             background-color: #003399;
+        }
+
+        /* Responsivita pro menší obrazovky */
+        @media (max-width: 768px) {
+            .thumbnail-container {
+                flex-wrap: wrap;
+            }
+
+            .thumbnail-container img {
+                width: 80px; /* Zmenší miniatury na menších zařízeních */
+            }
         }
 
     </style>
